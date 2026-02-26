@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电动推杆状态："
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/pushrod_putt_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="停止"
+                android:textColor="@color/colorPrimary"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="行程开关："
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/m_travelSwitch_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未触发"
+                android:textColor="@color/colorPrimary"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接近开关："
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/m_near_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未触发"
+                android:textColor="@color/colorPrimary"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp">
+
+            <Button
+                android:id="@+id/putt_pushrod_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推出推杆"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/back_pushrod_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:text="收回推杆"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/automode_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自动模式：关"
+            android:textSize="32sp" />
+    </LinearLayout>
+</RelativeLayout>

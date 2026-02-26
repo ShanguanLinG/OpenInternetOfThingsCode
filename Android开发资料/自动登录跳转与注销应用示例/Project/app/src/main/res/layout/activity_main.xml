@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人中心"
+            android:textColor="@android:color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:text="您已处于登录状态"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginTop="10sp"
+            android:background="@android:color/holo_blue_light"
+            android:text="点击返回"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginTop="10sp"
+            android:background="@android:color/holo_red_light"
+            android:text="点击注销"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
